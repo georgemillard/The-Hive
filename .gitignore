@@ -1,6 +1,7 @@
 # files
 .coverage
 .coveragerc
+hive/settings.py
 hive/settings_secret.py
 hive/settings_test.py
 db.sqlite3
