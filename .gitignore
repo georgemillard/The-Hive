@@ -6,6 +6,8 @@ hive/settings_test.py
 db.sqlite3
 
 # folders
-logs
 htmlcov
+hive/__pycache__
+asset_manager/__pycache__
+logs
 

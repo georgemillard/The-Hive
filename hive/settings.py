@@ -123,4 +123,4 @@ DEFAULT_FILE_STORAGE = 'asset_manager.custom_storages.MediaStorage'
 MEDIAFILES_LOCATION = 'media'
 MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 
-LOGFILE='logs/hive_logs.txt'
+LOGFILE='logs/hive_logs_test.txt'
