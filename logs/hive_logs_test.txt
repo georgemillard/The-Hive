@@ -1,0 +1,349 @@
+ 2017-05-30 14:40:44,842 - ERROR - Internal Server Error: /admin/asset_manager/file/add/
+Traceback (most recent call last):
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1440, in _changeform_view
+    if form.is_valid():
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 183, in is_valid
+    return self.is_bound and not self.errors
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 175, in errors
+    self.full_clean()
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 384, in full_clean
+    self._clean_fields()
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 405, in _clean_fields
+    value = getattr(self, 'clean_%s' % name)()
+  File "/Users/georgemillard/programming/hive/asset_manager/forms.py", line 11, in clean_name
+    if self.name is 'Bob':
+AttributeError: 'FileForm' object has no attribute 'name'
+ 2017-05-30 14:42:11,720 - ERROR - Internal Server Error: /admin/asset_manager/file/add/
+Traceback (most recent call last):
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1440, in _changeform_view
+    if form.is_valid():
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 183, in is_valid
+    return self.is_bound and not self.errors
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 175, in errors
+    self.full_clean()
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 384, in full_clean
+    self._clean_fields()
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 405, in _clean_fields
+    value = getattr(self, 'clean_%s' % name)()
+  File "/Users/georgemillard/programming/hive/asset_manager/forms.py", line 11, in clean_name
+    if instance.name is 'Bob':
+NameError: name 'instance' is not defined
+ 2017-05-30 14:42:38,582 - ERROR - Internal Server Error: /admin/asset_manager/file/add/
+Traceback (most recent call last):
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/model_utils/tracker.py", line 171, in save
+    ret = original_save(**kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/db/models/base.py", line 806, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/db/models/base.py", line 831, in save_base
+    update_fields=update_fields,
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/Users/georgemillard/programming/hive/asset_manager/signals.py", line 54, in generate_s3_file_key
+    instance.s3_key = instance.get_path().lower()
+  File "/Users/georgemillard/programming/hive/asset_manager/models.py", line 89, in get_path
+    return self.parent.get_path() + '/' + self.filename()
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 194, in __get__
+    "%s has no %s." % (self.field.model.__name__, self.field.name)
+django.db.models.fields.related_descriptors.RelatedObjectDoesNotExist: File has no parent.
+ 2017-05-30 14:43:34,353 - INFO - Starting new HTTPS connection (1): mybucket3535-test.s3.amazonaws.com
+ 2017-05-30 14:43:34,865 - INFO - Created media/folder1/, HTTPStatusCode: 200
+ 2017-05-30 14:48:00,079 - INFO - Starting new HTTPS connection (1): mybucket3535-test.s3.amazonaws.com
+ 2017-05-30 14:48:00,518 - INFO - Deleted media/folder1/, HTTPStatusCode: 204
+ 2017-05-30 14:57:50,366 - INFO - running clean_name
+ 2017-05-30 14:58:07,641 - INFO - running clean_name
+ 2017-05-30 14:58:14,151 - INFO - running clean_name
+ 2017-05-30 15:22:09,248 - ERROR - Internal Server Error: /admin/asset_manager/file/add/
+Traceback (most recent call last):
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1440, in _changeform_view
+    if form.is_valid():
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 183, in is_valid
+    return self.is_bound and not self.errors
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 175, in errors
+    self.full_clean()
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 384, in full_clean
+    self._clean_fields()
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 405, in _clean_fields
+    value = getattr(self, 'clean_%s' % name)()
+  File "/Users/georgemillard/programming/hive/asset_manager/forms.py", line 22, in clean_name
+    siblings = File.objects.all(parent=parent)
+TypeError: all() got an unexpected keyword argument 'parent'
+ 2017-05-30 15:23:21,056 - INFO - Starting new HTTPS connection (1): mybucket3535-test.s3.amazonaws.com
+ 2017-05-30 15:23:21,489 - INFO - Deleted media/folder1/, HTTPStatusCode: 204
+ 2017-05-30 15:35:35,520 - ERROR - Internal Server Error: /admin/asset_manager/file/add/
+Traceback (most recent call last):
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1440, in _changeform_view
+    if form.is_valid():
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 183, in is_valid
+    return self.is_bound and not self.errors
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 175, in errors
+    self.full_clean()
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 384, in full_clean
+    self._clean_fields()
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 405, in _clean_fields
+    value = getattr(self, 'clean_%s' % name)()
+  File "/Users/georgemillard/programming/hive/asset_manager/forms.py", line 20, in clean_name
+    logging.info('name {0}, parent {1}'.format(name, parent.name))
+AttributeError: 'NoneType' object has no attribute 'name'
+ 2017-05-30 15:36:29,134 - ERROR - Internal Server Error: /admin/asset_manager/file/5/change/
+Traceback (most recent call last):
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1511, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1440, in _changeform_view
+    if form.is_valid():
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 183, in is_valid
+    return self.is_bound and not self.errors
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 175, in errors
+    self.full_clean()
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 384, in full_clean
+    self._clean_fields()
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/forms/forms.py", line 405, in _clean_fields
+    value = getattr(self, 'clean_%s' % name)()
+  File "/Users/georgemillard/programming/hive/asset_manager/forms.py", line 20, in clean_name
+    logging.info('name {0}, parent {1}'.format(name, parent.name))
+AttributeError: 'NoneType' object has no attribute 'name'
+ 2017-05-30 15:40:30,593 - INFO - name test, parent folder1
+ 2017-05-30 15:41:02,119 - INFO - name test2, parent folder1
+ 2017-05-30 15:43:09,772 - INFO - name test2, parent folder1
+ 2017-05-30 15:43:09,796 - ERROR - Internal Server Error: /admin/asset_manager/file/5/change/
+Traceback (most recent call last):
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 1040, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/base.py", line 736, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/template/defaultfilters.py", line 47, in _dec
+    args[0] = force_text(args[0])
+  File "/Users/georgemillard/programming/python/.virtualenvs/hive_venv/lib/python3.6/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+TypeError: __str__ returned non-string (type NoneType)
+ 2017-05-30 15:43:16,156 - INFO - name test2, parent folder1
+ 2017-05-30 15:43:26,086 - INFO - name test23, parent folder1
+ 2017-05-30 15:43:26,269 - INFO - Starting new HTTPS connection (1): mybucket3535-test.s3.amazonaws.com
+ 2017-05-30 15:43:26,848 - INFO - File changed from  to folder1/file3.txt
+ 2017-05-30 15:43:26,850 - INFO - Starting new HTTPS connection (1): mybucket3535-test.s3.amazonaws.com
+ 2017-05-30 15:43:27,236 - INFO - Deleted media/, HTTPStatusCode: 204
+ 2017-05-30 15:43:33,338 - INFO - name test23, parent folder1
+ 2017-05-30 15:43:37,267 - INFO - name test234, parent folder1
+ 2017-05-30 15:43:46,437 - INFO - name test234, parent folder1
+ 2017-05-30 15:44:29,386 - INFO - name test234, parent folder1
+ 2017-05-30 15:44:33,625 - INFO - name test234, parent folder1
+ 2017-05-30 15:45:11,679 - INFO - name test234, parent folder1
+ 2017-05-30 15:45:49,118 - INFO - name test234, parent folder1
+ 2017-05-30 15:46:26,814 - INFO - name test234, parent folder1
+ 2017-05-30 15:46:26,882 - INFO - Starting new HTTPS connection (1): mybucket3535-test.s3.amazonaws.com
+ 2017-05-30 15:46:27,454 - INFO - File changed from folder1/file3.txt to folder1/file4.txt
+ 2017-05-30 15:46:27,455 - INFO - Starting new HTTPS connection (1): mybucket3535-test.s3.amazonaws.com
+ 2017-05-30 15:46:27,874 - INFO - Deleted media/folder1/file3.txt, HTTPStatusCode: 204
+ 2017-05-30 15:47:26,743 - INFO - name test234, parent folder1
+ 2017-05-30 15:47:26,750 - INFO - Resetting dropped connection: mybucket3535-test.s3.amazonaws.com
+ 2017-05-30 15:47:27,254 - INFO - File changed from folder1/file4.txt to folder1/file5.txt
+ 2017-05-30 15:47:27,255 - INFO - Resetting dropped connection: mybucket3535-test.s3.amazonaws.com
+ 2017-05-30 15:47:27,857 - INFO - Deleted media/folder1/file4.txt, HTTPStatusCode: 204
+ 2017-05-30 15:52:36,913 - INFO - name test, parent folder1
+ 2017-05-30 15:52:36,982 - INFO - Starting new HTTPS connection (1): mybucket3535-test.s3.amazonaws.com
+ 2017-05-30 15:52:37,516 - INFO - File changed from  to folder1/file6.txt
+ 2017-05-30 15:52:37,517 - INFO - Starting new HTTPS connection (1): mybucket3535-test.s3.amazonaws.com
+ 2017-05-30 15:52:37,930 - INFO - Deleted media/, HTTPStatusCode: 204
+ 2017-05-30 15:52:53,641 - INFO - name test, parent folder1
+ 2017-05-30 16:38:57,986 - INFO - name test234, parent folder1

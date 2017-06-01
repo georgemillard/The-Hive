@@ -1,0 +1,3 @@
+ 2017-05-30 14:36:17,184 - WARNING - Not Found: /myapp/
+ 2017-05-30 14:36:17,289 - WARNING - Not Found: /favicon.ico
+ 2017-05-30 14:36:20,848 - WARNING - Not Found: /myapp/
